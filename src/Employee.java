@@ -11,6 +11,7 @@ public abstract class Employee {
         this.baseSalary = baseSalary;
     }
 
+
     public String getFirstName() {
         return firstName;
     }
@@ -31,4 +32,16 @@ public abstract class Employee {
         this.baseSalary = baseSalary;
 
     }
+
+    // Regular method with implementation
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+
+    // Abstract method - each inheriting class must implement it
+    public abstract double calculateSalary();
+
+    // Abstract method for calculating vacation days
+    public abstract int calculateVacationDays();
 }
+
